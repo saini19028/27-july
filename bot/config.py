@@ -1,0 +1,15 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class Config:
+    API_ID = int(os.getenv("API_ID","24861505"))
+    API_HASH = os.getenv("API_HASH","fad28c88a18f4f2d9c67c2c08c19696f")
+    BOT_TOKEN = os.getenv("BOT_TOKEN","8715105949:AAFW_b5DdNkxq_zogdKcjqyBrqRj8bogvg8")
+    MONGO_URI = os.getenv("MONGO_URI","mongodb+srv://saini190204:DcuR9S8Bi8fIkMuQ@cluster0.sabffnh.mongodb.net/?appName=Cluster0&retryWrites=true&w=majority&tlsAllowInvalidCertificates=true")
+    DB_NAME = os.getenv("DB_NAME", "quiz_bot")
+    OWNER_ID = int(os.getenv("OWNER_ID","8583075184"))
+    DEFAULT_TIMER = int(os.getenv("DEFAULT_TIMER", 30))
+    BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL","-1003704798254")  # optional
+    LOG_CHANNEL = os.getenv("LOG_CHANNEL","-1003704798254")        # optional
